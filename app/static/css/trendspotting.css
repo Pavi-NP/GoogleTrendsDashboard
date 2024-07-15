@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+}
+
+.form-section {
+    margin-bottom: 20px;
+}
+
+.form-section label {
+    margin-right: 10px;
+}
+
+.trends-display, .news-summaries {
+    margin-top: 20px;
+}
+
+.article {
+    margin-bottom: 20px;
+}
+
+.article h3 {
+    margin: 0;
+}
+
+.article p {
+    margin: 5px 0;
+}
+
+.article a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.article a:hover {
+    text-decoration: underline;
+}

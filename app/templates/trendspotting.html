@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}Trendspotting{% endblock %}
+
+{% block content %}
+<div class="container">
+    <header>
+        <h1>Google Trends Dashboard - Trendspotting</h1>
+        <p>Track popular search terms and summarize related news articles.</p>
+    </header>
+    <main>
+        <section class="form-section">
+            <h2>Search Trends</h2>
+            <form id="trend-form">
+                <label for="start-date">Start Date:</label>
+                <input type="date" id="start-date" name="start-date" required>
+                
+                <label for="end-date">End Date:</label>
+                <input type="date" id="end-date" name="end-date" required>
+                
+                <label for="keywords">Keywords:</label>
+                <input type="text" id="keywords" name="keywords" placeholder="e.g., AI, Marketing" required>
+                
+                <button type="submit">Get Trends</button>
+            </form>
+        </section>
+        <section class="trends-display">
+            <h2>Trends Data</h2>
+            <canvas id="trends-chart"></canvas>
+        </section>
+        <section class="news-summaries">
+            <h2>News Summaries</h2>
+            <div id="news-articles"></div>
+        </section>
+    </main>
+</div>
+{% endblock %}
